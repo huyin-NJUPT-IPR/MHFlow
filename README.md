@@ -15,7 +15,19 @@ Our proposed method multiscale hybrid feature guided normalizing flow (MHFlow) i
 
 - Unpaired datasets (DICM, LIME, MEF, NPE and VV) [[Google Drive]](https://drive.google.com/drive/folders/1lp6m5JE3kf3M66Dicbx5wSnvhxt90V4T).
 
+## Training our method
 
+### Configuration
+
+Modify the related parameters (paths, loss weights, training steps, and etc.) in the config yaml files
+```bash
+./conf/MHFlow.yml
+```
+### Train MHFlow
+
+```bash
+python train.py --opt config path
+```
 
 ## Testing our method
 
